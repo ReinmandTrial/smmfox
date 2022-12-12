@@ -1,0 +1,53 @@
+%secondFont {
+   font-family: 'Exo 2';
+   font-weight: 700;
+}
+%btnCommon {
+   border-radius: 10px;
+   max-width: 200px;
+   width: 100%;
+   color: var(--white);
+}
+//Typography========================================================================================================================================================
+.h1 {
+   @extend %secondFont;
+   font-size: 83px;
+   text-transform: uppercase;
+}
+.h2 {
+   @extend %secondFont;
+   font-size: 72px;
+   text-transform: uppercase;
+}
+
+.h3 {
+   @extend %secondFont;
+   font-size: 48px;
+}
+
+.h4 {
+   font-weight: 600;
+   font-size: 26px;
+}
+
+.h5 {
+   font-weight: 400;
+   font-size: 24px;
+}
+//Buttons========================================================================================================================================================
+.btn-red {
+   @extend %btnCommon;
+   background-color: var(--red);
+}
+.btn-blue {
+   @extend %btnCommon;
+   background-color: var(--blue);
+}
+.btn-purple {
+   @extend %btnCommon;
+   background-color: var(--purple);
+}
+.btn-pink {
+   @extend %btnCommon;
+   background-color: var(--pink);
+}
