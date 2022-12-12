@@ -4,10 +4,11 @@
 }
 //====================================================================================================
 .header {
-   position: fixed;
+   position: absolute;
    top: 0;
    left: 0;
    width: 100%;
+   min-width: 320px;
    z-index: 3;
    &__content {
       padding: 15px 0px;

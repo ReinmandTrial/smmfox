@@ -1,3 +1,214 @@
 //====================================================================================================
+.footer {
+   position: relative;
+   &__content {
+      padding: 50px 0px;
+      display: grid;
+      grid-template-columns: 230px auto 230px;
+      gap: 70px;
+      align-items: center;
+      @media (max-width: 1200px) {
+         gap: 20px;
+      }
+      @media (max-width: 767.98px) {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         padding: 30px 0px 50px 0px;
+      }
+   }
+
+   &__info-col {
+   }
+
+   &__payments-col {
+   }
+
+   &__contacts {
+   }
+
+   &__return-btn {
+      position: absolute;
+      background-color: var(--blue);
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 120px;
+      top: -60px;
+      animation: return 2s infinite ease-in-out;
+      @media (max-width: 767.98px) {
+         top: unset;
+         bottom: 50px;
+         right: 30px;
+      }
+      @media (max-width: 575.98px) {
+         bottom: 40px;
+         right: 20px;
+      }
+      svg {
+         width: 50px;
+         height: 50px;
+      }
+   }
+}
+.info-col {
+   &__logo {
+      height: 80px;
+      width: 190px;
+      margin-bottom: 10px;
+      img {
+         max-width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__text {
+      @media (max-width: 767.98px) {
+         text-align: center;
+         font-size: 14px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 20px;
+         @media (max-width: 767.98px) {
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
+.payments {
+   &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+   }
+
+   &__item {
+      display: flex;
+      position: relative;
+      height: 30px;
+      width: 80px;
+      svg {
+         display: flex;
+         height: 30px;
+         max-width: 80px;
+         &:first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease 0s;
+         }
+         &:last-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease 0s;
+         }
+      }
+      &:last-child {
+         width: 130px;
+         svg {
+            max-width: 130px;
+         }
+      }
+      &:nth-child(3) {
+         width: 50px;
+         svg {
+            max-width: 50px;
+         }
+      }
+      &:hover {
+         svg {
+            &:first-child {
+               opacity: 1;
+               visibility: visible;
+               transition: all 0.3s ease 0s;
+               transform: scale(1.03);
+            }
+            &:last-child {
+               opacity: 0;
+               visibility: hidden;
+               transition: all 0.3s ease 0s;
+            }
+         }
+      }
+   }
+}
+.footer-contacts {
+   &__content {
+   }
+
+   &__social-list {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-bottom: 30px;
+      @media (max-width: 767.98px) {
+         justify-content: center;
+         gap: 25px;
+      }
+   }
+
+   &__social-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg,
+      img {
+         width: 30px;
+         height: 30px;
+         @media (max-width: 767.98px) {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
+
+   &__phone {
+      text-align: right;
+      max-width: max-content;
+      margin: 0 0 20px auto;
+      color: var(--blue);
+      @media (max-width: 767.98px) {
+         text-align: center;
+         margin: 0 auto 20px auto;
+         font-size: 20px;
+      }
+      @media (max-width: 500.98px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   &__email {
+      text-align: right;
+      max-width: max-content;
+      margin: 0 0 0 auto;
+      color: var(--blue);
+      @media (max-width: 767.98px) {
+         text-align: center;
+         margin: auto;
+         font-size: 18px;
+      }
+      @media (max-width: 500.98px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+}
 
 //====================================================================================================
+@keyframes return {
+   0% {
+      transform: translate(0px, 0px);
+   }
+   50% {
+      transform: translate(0px, 10px);
+   }
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
