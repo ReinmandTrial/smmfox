@@ -1,17 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('components/_head.htm',{
-"title":"MainPage"
-})
+   @@include('components/_head.htm',{ "title":"MainPage" })
 
-<body>
-	<div class="wrapper">
-		@@include('components/_header.htm',{})
-		<main class="SelectPageName">
-			
-		</main>
-		@@include('components/_footer.htm',{})
-	</div>
-</body>
-
+   <body>
+      <div class="wrapper">
+         @@include('components/_header.htm',{})
+         <main class="main">
+            <section class="main__home home">
+               <div class="home__container-m">
+                  <div class="home__content">
+                     <div class="home__info">
+                        <p class="home__title h1">Просування вашого акаунту</p>
+                        <p class="home__title home__title_blue h1">у соцмережах</p>
+                     </div>
+                     <div class="home__images">
+                        <img class="home__img home__img_pc" src="@img/title-bg-pc.png" alt="background" />
+                        <img class="home__img home__img_mob" src="@img/title-bg-mob.png" alt="background" />
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="main__platforms platforms">
+               <div class="platforms__container-m">
+                  <div class="platforms__content">
+                     <div class="platforms__list">
+                        <button type="button" class="platforms__item h5">
+                           <svg class="platforms__img">
+                              <use xlink:href="@img/icons/icons.svg#svg-youtube"></use>
+                           </svg>
+                           <span>YouTube</span>
+                        </button>
+                        <button type="button" class="platforms__item h5">
+                           <svg class="platforms__img">
+                              <use xlink:href="@img/icons/icons.svg#svg-telegram"></use>
+                           </svg>
+                           <span>Telegram</span>
+                        </button>
+                        <button type="button" class="platforms__item h5">
+                           <img class="platforms__img" src="@img/instagram.svg" alt="instagram" />
+                           <span>Instagram</span>
+                        </button>
+                        <button type="button" class="platforms__item h5">
+                           <svg class="platforms__img">
+                              <use xlink:href="@img/icons/icons.svg#svg-facebook"></use>
+                           </svg>
+                           <span>Facebook</span>
+                        </button>
+                        <button type="button" class="platforms__item h5">
+                           <svg class="platforms__img">
+                              <use xlink:href="@img/icons/icons.svg#svg-tiktok"></use>
+                           </svg>
+                           <span>TikTok</span>
+                        </button>
+                        <button type="button" class="platforms__item h5">
+                           <svg class="platforms__img">
+                              <use xlink:href="@img/icons/icons.svg#svg-twitter"></use>
+                           </svg>
+                           <span>Twitter</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="main__services services">
+               <div class="services__container-l">
+                  <div class="services__content">
+                     <p class="services__title h2">Послуги</p>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">YouTube</p>
+                           <p class="service-block__description">
+                              Продовжуйте знімати захоплюючі відео, робіть їхню професійну обробку, а просування свого каналу залиште нам.
+                           </p>
+                           <a href="#" class="service-block__link btn-red">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/youtube.png" alt="youtube" /></div>
+                     </div>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">Telegram</p>
+                           <p class="service-block__description">
+                              Ви маєте свій канал у Telegram, і Ви хочете його зробити ще популярнішим? Тоді Ви розумієте, що перший крок у
+                              цьому напрямі – просування.
+                           </p>
+                           <a href="#" class="service-block__link btn-blue">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/telegram.png" alt="telegram" /></div>
+                     </div>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">Instagram</p>
+                           <p class="service-block__description">
+                              Ми проведемо потрібні налаштування, допоможемо Вам знайти свою цільову аудиторію, позбавимо від роззяв, що
+                              проходять повз, і марних лайків.
+                           </p>
+                           <a href="#" class="service-block__link btn-purple">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/instagram.png" alt="instagram" /></div>
+                     </div>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">Facebook</p>
+                           <p class="service-block__description">
+                              Ми допоможемо Вам швидко зібрати велику кількість лайків після публікації. Це дасть сигнал соцмережі, що Ваш
+                              пост цікавий аудиторії.
+                           </p>
+                           <a href="#" class="service-block__link btn-blue">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/facebook.png" alt="facebook" /></div>
+                     </div>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">TikTok</p>
+                           <p class="service-block__description">
+                              Залиште посилання на ролик, ми швидко зробимо його популярним у мережі TikTok, формуючи лайки реальних
+                              європейських користувачів.
+                           </p>
+                           <a href="#" class="service-block__link btn-pink">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/tiktok.png" alt="tiktok" /></div>
+                     </div>
+                     <div class="services__block service-block">
+                        <div class="service-block__info">
+                           <p class="service-block__title h3">Twitter</p>
+                           <p class="service-block__description">
+                              Twitter - унікальна мережа, яка живе за своїми правилами. Тому для ефективного просування у цій мережі
+                              мікроблогів важливо зрозуміти певну специфіку.
+                           </p>
+                           <a href="#" class="service-block__link btn-blue">Докладніше</a>
+                        </div>
+                        <div class="service-block__image"><img src="@img/services/twitter.png" alt="twitter" /></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="main__benefits benefits">
+               <div class="benefits__container-m">
+                  <div class="benefits__content">
+                     <p class="benefits__title h2">ПЕРЕВАГИ</p>
+                     <div class="benefits__list">
+                        <div class="benefits__item">
+                           <div class="benefits__item-img"><img src="@img/benefits/1.png" alt="price" /></div>
+                           <p class="benefits__item-title h4">Якість та ціна 24/7</p>
+                           <p class="benefits__item-descr">Будьте впевнені, у нас найкращі ціни на найякісніші послуги</p>
+                        </div>
+                        <div class="benefits__item">
+                           <div class="benefits__item-img"><img src="@img/benefits/2.png" alt="reliability" /></div>
+                           <p class="benefits__item-title h4">Надійність</p>
+                           <p class="benefits__item-descr">
+                              Повна автоматизація запуску та виконання всіх послуг на максимальній швидкості
+                           </p>
+                        </div>
+                        <div class="benefits__item">
+                           <div class="benefits__item-img"><img src="@img/benefits/3.png" alt="experience" /></div>
+                           <p class="benefits__item-title h4">Досвід роботи</p>
+                           <p class="benefits__item-descr">
+                              Ми качаємо соцмережі вже більше 3 років та виконали близько 200 тисяч замовлень
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <!-- @@include('components/_footer.htm',{}) -->
+      </div>
+   </body>
 </html>
