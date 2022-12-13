@@ -515,9 +515,6 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
 .payments__item:hover svg:last-child {
@@ -651,6 +648,7 @@ body {
           transform: rotate(353deg) translate(-30px, -25px);
   -webkit-box-shadow: 0 0 10px var(--blue);
           box-shadow: 0 0 10px var(--blue);
+  text-align: center;
 }
 
 .home__images {

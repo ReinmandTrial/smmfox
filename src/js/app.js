@@ -5,5 +5,8 @@ import * as modules from './modules/functions.js'
 modules.isWebp()
 modules.menuInit()
 //LANGUAGES========================================================================================================================================================
-import { languageSwitcher } from './modules/language.js'
+import { languageSwitcher, setLang } from './modules/language.js'
 languageSwitcher()
+setLang()
+//PageNavigation========================================================================================================================================================
+modules.pageNavigation()

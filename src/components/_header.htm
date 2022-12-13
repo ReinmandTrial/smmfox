@@ -5,42 +5,42 @@
             <a href="./index.html" class="header__logo header__logo_pc"><img src="@img/logo-black.svg" alt="logo" /></a>
             <nav class="header__menu">
                <ul class="header__menu-list">
-                  <li class="header__menu-item">Головна</li>
-                  <li class="header__menu-item">Послуги</li>
-                  <li class="header__menu-item">Переваги</li>
+                  <li data-lg="header.nav1" data-goto=".home" class="header__menu-item">Главная</li>
+                  <li data-lg="header.nav2" data-goto=".services" class="header__menu-item">Услуги</li>
+                  <li data-lg="header.nav3" data-goto=".benefits" class="header__menu-item">Преимущества</li>
                </ul>
             </nav>
             <a class="header__phone" href="tel:+38093777131">+38 (093) 777 13 31</a>
             <div class="header__languages">
-               <button type="button" class="header__lang-item _active">UA</button>
-               <button type="button" class="header__lang-item">RU</button>
+               <button value="ru" data-language="ru" type="button" class="header__lang-item">RU</button>
+               <button value="ua" data-language="ua" type="button" class="header__lang-item">UA</button>
             </div>
             <div class="header__social">
-               <button type="button" class="header__social-item">
+               <a target="_blank" href="viber://chat?number=+380937771331" class="header__social-item">
                   <svg>
                      <use xlink:href="@img/icons/icons.svg#svg-viber-white"></use>
                   </svg>
-               </button>
-               <button type="button" class="header__social-item">
+               </a>
+               <a target="_blank" href="whatsapp://send?phone=+380937771331" class="header__social-item">
                   <svg>
                      <use xlink:href="@img/icons/icons.svg#svg-whatsapp-white"></use>
                   </svg>
-               </button>
-               <button type="button" class="header__social-item">
+               </a>
+               <a target="_blank" href="https://www.facebook.com/smmfox.ua" class="header__social-item">
                   <svg>
                      <use xlink:href="@img/icons/icons.svg#svg-facebook-white"></use>
                   </svg>
-               </button>
-               <button type="button" class="header__social-item">
+               </a>
+               <a target="_blank" href="https://www.instagram.com/smmfox.ua" class="header__social-item">
                   <svg>
                      <use xlink:href="@img/icons/icons.svg#svg-instagram-white"></use>
                   </svg>
-               </button>
-               <button type="button" class="header__social-item">
+               </a>
+               <a target="_blank" href="https://t.me/smmfoxua" class="header__social-item">
                   <svg>
                      <use xlink:href="@img/icons/icons.svg#svg-telegram-white"></use>
                   </svg>
-               </button>
+               </a>
             </div>
          </div>
          <a href="./index.html" class="header__logo header__logo_mob header__logo_mob-black"
