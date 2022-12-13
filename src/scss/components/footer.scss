@@ -149,6 +149,14 @@
             }
          }
       }
+      &:nth-child(4) {
+         width: 48px;
+         svg {
+            @media (max-width: 575.98px) {
+               max-width: 48px;
+            }
+         }
+      }
       &:hover {
          svg {
             &:first-child {

@@ -507,6 +507,10 @@ body {
   max-width: 50px;
 }
 
+.payments__item:nth-child(4) {
+  width: 48px;
+}
+
 .payments__item:hover svg:first-child {
   opacity: 1;
   visibility: visible;
@@ -1355,6 +1359,10 @@ body {
 
   .payments__item:nth-child(3) svg {
     max-width: 27px;
+  }
+
+  .payments__item:nth-child(4) svg {
+    max-width: 48px;
   }
 
   .home__content {
