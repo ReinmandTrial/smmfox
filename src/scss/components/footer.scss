@@ -92,6 +92,16 @@
       gap: 20px;
       @media (max-width: 575.98px) {
          gap: 15px;
+         transform: scale(1.6);
+      }
+      @media (max-width: 500px) {
+         transform: scale(1.4);
+      }
+      @media (max-width: 430px) {
+         transform: scale(1.2);
+      }
+      @media (max-width: 370px) {
+         transform: scale(1);
       }
    }
 
@@ -150,7 +160,9 @@
          }
       }
       &:nth-child(4) {
-         width: 48px;
+         @media (max-width: 575.98px) {
+            width: 48px;
+         }
          svg {
             @media (max-width: 575.98px) {
                max-width: 48px;
