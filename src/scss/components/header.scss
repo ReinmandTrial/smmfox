@@ -1,6 +1,9 @@
 %headerTextStyle {
    font-weight: 600;
    font-size: 18px;
+   @media (max-width: 991.98px) {
+      font-weight: 400;
+   }
 }
 //====================================================================================================
 .header {
@@ -47,7 +50,7 @@
       align-items: center;
       @media (max-width: 991.98px) {
          display: flex;
-         align-items: center;
+         align-items: start;
          justify-content: space-between;
          flex-direction: column;
          position: fixed;
@@ -55,7 +58,7 @@
          left: 0;
          right: 0;
          bottom: 0;
-         padding: 150px 15px 35px 15px;
+         padding: 95px 15px 35px 15px;
          background-color: var(--black);
          width: 100%;
          height: 100%;
@@ -141,7 +144,7 @@
       }
       @media (max-width: 991.98px) {
          flex-direction: column;
-         align-items: center;
+         align-items: start;
          gap: 30px 35px;
       }
    }
@@ -163,7 +166,7 @@
       }
       @media (max-width: 991.98px) {
          color: var(--white);
-         font-size: 25px;
+         font-size: 20px;
       }
       @media (any-hover: hover) {
          &:hover {
@@ -191,12 +194,11 @@
          transition: all 0.3s ease 0s;
       }
       @media (max-width: 991.98px) {
-         color: var(--red);
+         color: var(--blue);
          order: 3;
-         font-size: 27px;
+         font-size: 20px;
          border-radius: 10px;
          padding: 10px 10px;
-         box-shadow: 0px 0px 5px var(--red);
       }
       &:hover {
          transition: all 0.3s ease 0s;
@@ -225,14 +227,11 @@
          font-size: 20px;
          padding: 5px 20px;
          background-color: var(--gray-50);
-         color: var(--white);
+         color: #787878;
       }
       &._active {
          background-color: var(--gray-50);
          color: var(--white);
-         @media (max-width: 991.98px) {
-            color: var(--red);
-         }
       }
    }
 
@@ -242,10 +241,7 @@
       }
       order: 4;
       display: flex;
-      gap: 40px;
-      @media (max-width: 375px) {
-         gap: 35px;
-      }
+      gap: 25px;
    }
 
    &__social-item {
@@ -302,7 +298,7 @@
          top: calc(50% - 1px);
       }
       .menu-open & {
-         background-color: var(--red);
+         background-color: var(--blue);
          transition: all 0.3s ease 0s;
          span {
             width: 0;
