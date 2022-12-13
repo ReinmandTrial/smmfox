@@ -292,6 +292,7 @@
       flex: 0 1 640px;
       @media (max-width: 575.98px) {
          flex: auto;
+         margin-bottom: 15px;
       }
       img {
          max-width: 100%;
@@ -307,7 +308,7 @@
    position: relative;
    &::after {
       content: '';
-      background: linear-gradient(232.64deg, #27b1ff -13.78%, rgba(239, 239, 239, 0) 47%);
+      background: linear-gradient(232.64deg, #27b1ff -13.78%, rgba(239, 239, 239, 0) 35%);
       transform: rotate(-180deg);
       position: absolute;
       left: 0;
