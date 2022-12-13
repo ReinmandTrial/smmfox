@@ -46,11 +46,17 @@
       }
       @media (max-width: 575.98px) {
          bottom: 40px;
-         right: 20px;
+         right: 15px;
+         width: 50px;
+         height: 50px;
       }
       svg {
          width: 50px;
          height: 50px;
+         @media (max-width: 575.98px) {
+            width: 23px;
+            height: 23px;
+         }
       }
    }
 }
@@ -84,6 +90,9 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
+      @media (max-width: 575.98px) {
+         gap: 15px;
+      }
    }
 
    &__item {
@@ -91,10 +100,16 @@
       position: relative;
       height: 30px;
       width: 80px;
+      @media (max-width: 575.98px) {
+         width: 40px;
+      }
       svg {
          display: flex;
          height: 30px;
          max-width: 80px;
+         @media (max-width: 575.98px) {
+            max-width: 40px;
+         }
          &:first-child {
             position: absolute;
             top: 0;
@@ -112,14 +127,26 @@
       }
       &:last-child {
          width: 130px;
+         @media (max-width: 575.98px) {
+            width: 77px;
+         }
          svg {
             max-width: 130px;
+            @media (max-width: 575.98px) {
+               max-width: 77px;
+            }
          }
       }
       &:nth-child(3) {
          width: 50px;
+         @media (max-width: 575.98px) {
+            width: 27px;
+         }
          svg {
             max-width: 50px;
+            @media (max-width: 575.98px) {
+               max-width: 27px;
+            }
          }
       }
       &:hover {
@@ -172,14 +199,10 @@
       text-align: right;
       max-width: max-content;
       margin: 0 0 20px auto;
-      color: var(--blue);
       @media (max-width: 767.98px) {
          text-align: center;
-         margin: 0 auto 20px auto;
-         font-size: 20px;
-      }
-      @media (max-width: 500.98px) {
-         margin: 0px 0px 20px 0px;
+         margin: 0 auto 10px auto;
+         font-size: 14px;
       }
    }
 
@@ -187,14 +210,10 @@
       text-align: right;
       max-width: max-content;
       margin: 0 0 0 auto;
-      color: var(--blue);
       @media (max-width: 767.98px) {
          text-align: center;
          margin: auto;
-         font-size: 18px;
-      }
-      @media (max-width: 500.98px) {
-         margin: 0px 0px 20px 0px;
+         font-size: 14px;
       }
    }
 }

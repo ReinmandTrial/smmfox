@@ -1,3 +1,4 @@
+import { menuClose } from './functions.js'
 import ruLocales from '../../files/locales/ru.json'
 import uaLocales from '../../files/locales/ua.json'
 
@@ -10,6 +11,7 @@ export function languageSwitcher() {
             item.classList.add('_active')
             window.localStorage.setItem('lang', item.value)
             setLang()
+            menuClose()
          }
       })
    })

@@ -106,6 +106,7 @@
                     item.classList.add("_active");
                     window.localStorage.setItem("lang", item.value);
                     setLang();
+                    menuClose();
                 }
             }));
         }));

@@ -376,11 +376,9 @@ body {
           justify-content: center;
 }
 
-.header__social-item svg {
+.header__social-item img {
   width: 30px;
   height: 30px;
-  fill: var(--white);
-  stroke: var(--white);
 }
 
 .icon-menu {
@@ -560,7 +558,6 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   margin: 0 0 20px auto;
-  color: var(--blue);
 }
 
 .footer-contacts__email {
@@ -569,7 +566,6 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   margin: 0 0 0 auto;
-  color: var(--blue);
 }
 
 @-webkit-keyframes return {
@@ -934,17 +930,17 @@ body {
     height: 100%;
     background-color: var(--black);
     z-index: 10;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.1s ease 0s;
+    -o-transition: all 0.1s ease 0s;
+    transition: all 0.1s ease 0s;
   }
 
-  .menu-open .header__content::after::after {
+  .menu-open .header__content::after {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s;
   }
 
   .header__body {
@@ -991,6 +987,11 @@ body {
     display: none;
   }
 
+  .header__logo_mob {
+    width: 130px;
+    height: 55px;
+  }
+
   .header__menu {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1009,7 +1010,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    gap: 30px 35px;
+    gap: 20px 35px;
   }
 
   .header__menu-item {
@@ -1248,14 +1249,14 @@ body {
 
   .footer-contacts__phone {
     text-align: center;
-    margin: 0 auto 20px auto;
-    font-size: 20px;
+    margin: 0 auto 10px auto;
+    font-size: 14px;
   }
 
   .footer-contacts__email {
     text-align: center;
     margin: auto;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .home__info {
@@ -1312,14 +1313,44 @@ body {
 }
 
 @media (max-width: 575.98px) {
-  .header__logo_mob {
-    width: 130px;
-    height: 55px;
-  }
-
   .footer__return-btn {
     bottom: 40px;
-    right: 20px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__return-btn svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .payments__list {
+    gap: 15px;
+  }
+
+  .payments__item {
+    width: 40px;
+  }
+
+  .payments__item svg {
+    max-width: 40px;
+  }
+
+  .payments__item:last-child {
+    width: 77px;
+  }
+
+  .payments__item:last-child svg {
+    max-width: 77px;
+  }
+
+  .payments__item:nth-child(3) {
+    width: 27px;
+  }
+
+  .payments__item:nth-child(3) svg {
+    max-width: 27px;
   }
 
   .home__content {
@@ -1420,16 +1451,6 @@ body {
   .benefits__item-descr {
     font-size: 14px;
     max-width: none;
-  }
-}
-
-@media (max-width: 500.98px) {
-  .footer-contacts__phone {
-    margin: 0px 0px 20px 0px;
-  }
-
-  .footer-contacts__email {
-    margin: 0px 0px 20px 0px;
   }
 }
 
