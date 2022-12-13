@@ -2,7 +2,7 @@
 import '../scss/style.scss'
 //COMMON========================================================================================================================================================
 import * as modules from './modules/functions.js'
-// modules.isWebp()
+modules.isWebp()
 modules.menuInit()
 //LANGUAGES========================================================================================================================================================
 import { languageSwitcher, setLang } from './modules/language.js'
