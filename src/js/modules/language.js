@@ -1,6 +1,6 @@
 import { menuClose } from './functions.js'
-import ruLocales from '../../files/locales/ru.json'
-import uaLocales from '../../files/locales/ua.json'
+// import ruLocales from '../../files/locales/ru'
+// import uaLocales from '../../files/locales/ua'
 
 export function languageSwitcher() {
    const langList = document.querySelectorAll('.header__lang-item')
